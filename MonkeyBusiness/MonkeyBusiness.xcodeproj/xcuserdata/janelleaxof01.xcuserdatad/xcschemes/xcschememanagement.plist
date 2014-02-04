@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ObjectiveChipmunk.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>E60D277818A18A0B00B43504</key>
+		<key>E68E83E118A195450025A5C4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E68E83F818A195450025A5C4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
