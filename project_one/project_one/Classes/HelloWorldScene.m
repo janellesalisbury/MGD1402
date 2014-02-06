@@ -9,7 +9,7 @@
 
 #import "HelloWorldScene.h"
 #import "IntroScene.h"
-#import "NewtonScene.h"
+
 
 // -----------------------------------------------------------------------
 #pragma mark - HelloWorldScene
@@ -120,10 +120,6 @@
                                withTransition:[CCTransition transitionPushWithDirection:CCTransitionDirectionRight duration:1.0f]];
 }
 
-- (void)onNewtonClicked:(id)sender
-{
-    [[CCDirector sharedDirector] pushScene:[NewtonScene scene] withTransition:[CCTransition transitionPushWithDirection:CCTransitionDirectionLeft duration:1.0f]];
-}
 
 // -----------------------------------------------------------------------
 @end

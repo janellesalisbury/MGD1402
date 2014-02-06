@@ -212,6 +212,10 @@
 		E68E8C6818A4398E0025A5C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E68E8C6718A4398E0025A5C4 /* AppDelegate.m */; };
 		E68E8C6B18A4398E0025A5C4 /* HelloWorldScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E68E8C6A18A4398E0025A5C4 /* HelloWorldScene.m */; };
 		E68E8C6E18A4398F0025A5C4 /* IntroScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E68E8C6D18A4398F0025A5C4 /* IntroScene.m */; };
+		E68E8C9518A43A5B0025A5C4 /* background texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E68E8C9418A43A5B0025A5C4 /* background texture.jpg */; };
+		E68E8C9718A43A6B0025A5C4 /* snake.png in Resources */ = {isa = PBXBuildFile; fileRef = E68E8C9618A43A6B0025A5C4 /* snake.png */; };
+		E68E8C9918A43A780025A5C4 /* pig_64x72.png in Resources */ = {isa = PBXBuildFile; fileRef = E68E8C9818A43A780025A5C4 /* pig_64x72.png */; };
+		E68E8C9B18A43A800025A5C4 /* turtle_64x72.png in Resources */ = {isa = PBXBuildFile; fileRef = E68E8C9A18A43A800025A5C4 /* turtle_64x72.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -653,6 +657,10 @@
 		E68E8C6A18A4398E0025A5C4 /* HelloWorldScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HelloWorldScene.m; path = Classes/HelloWorldScene.m; sourceTree = "<group>"; };
 		E68E8C6C18A4398E0025A5C4 /* IntroScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IntroScene.h; path = Classes/IntroScene.h; sourceTree = "<group>"; };
 		E68E8C6D18A4398F0025A5C4 /* IntroScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = IntroScene.m; path = Classes/IntroScene.m; sourceTree = "<group>"; };
+		E68E8C9418A43A5B0025A5C4 /* background texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background texture.jpg"; sourceTree = "<group>"; };
+		E68E8C9618A43A6B0025A5C4 /* snake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snake.png; sourceTree = "<group>"; };
+		E68E8C9818A43A780025A5C4 /* pig_64x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pig_64x72.png; sourceTree = "<group>"; };
+		E68E8C9A18A43A800025A5C4 /* turtle_64x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turtle_64x72.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -724,6 +732,10 @@
 		E68E89D718A439890025A5C4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E68E8C9818A43A780025A5C4 /* pig_64x72.png */,
+				E68E8C9A18A43A800025A5C4 /* turtle_64x72.png */,
+				E68E8C9618A43A6B0025A5C4 /* snake.png */,
+				E68E8C9418A43A5B0025A5C4 /* background texture.jpg */,
 				E68E89D818A439890025A5C4 /* Default.png */,
 				E68E89DA18A439890025A5C4 /* Default@2x.png */,
 				E68E89DC18A439890025A5C4 /* Default-568h@2x.png */,
@@ -1642,6 +1654,10 @@
 				E68E8BDB18A4398D0025A5C4 /* LICENSE_Kazmath.txt in Resources */,
 				E68E8BF218A4398E0025A5C4 /* LICENSE_CCBReader.txt in Resources */,
 				E68E8C6018A4398E0025A5C4 /* LICENSE_Chipmunk.txt in Resources */,
+				E68E8C9518A43A5B0025A5C4 /* background texture.jpg in Resources */,
+				E68E8C9718A43A6B0025A5C4 /* snake.png in Resources */,
+				E68E8C9918A43A780025A5C4 /* pig_64x72.png in Resources */,
+				E68E8C9B18A43A800025A5C4 /* turtle_64x72.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
