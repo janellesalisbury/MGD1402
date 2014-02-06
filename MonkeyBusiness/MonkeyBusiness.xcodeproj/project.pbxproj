@@ -211,19 +211,10 @@
 		E68E868B18A1954A0025A5C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E68E868A18A1954A0025A5C4 /* main.m */; };
 		E68E868F18A1954A0025A5C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E68E868E18A1954A0025A5C4 /* AppDelegate.m */; };
 		E68E869218A1954A0025A5C4 /* HelloWorldScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E68E869118A1954A0025A5C4 /* HelloWorldScene.m */; };
-		E68E869518A1954A0025A5C4 /* IntroScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E68E869418A1954A0025A5C4 /* IntroScene.m */; };
-		E68E869918A1954A0025A5C4 /* NewtonScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E68E869818A1954A0025A5C4 /* NewtonScene.m */; };
-		E68E869C18A1954A0025A5C4 /* NewtonSphere.m in Sources */ = {isa = PBXBuildFile; fileRef = E68E869B18A1954A0025A5C4 /* NewtonSphere.m */; };
-		E68E869F18A1954A0025A5C4 /* LightBulb.m in Sources */ = {isa = PBXBuildFile; fileRef = E68E869E18A1954A0025A5C4 /* LightBulb.m */; };
-		E68E86A218A1954A0025A5C4 /* Rope.m in Sources */ = {isa = PBXBuildFile; fileRef = E68E86A118A1954A0025A5C4 /* Rope.m */; };
-		E68E86A418A1954A0025A5C4 /* fire.plist in Resources */ = {isa = PBXBuildFile; fileRef = E68E86A318A1954A0025A5C4 /* fire.plist */; };
-		E68E86A618A1954A0025A5C4 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = E68E86A518A1954A0025A5C4 /* fire.png */; };
-		E68E86A818A1954A0025A5C4 /* newton-ipadhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = E68E86A718A1954A0025A5C4 /* newton-ipadhd.plist */; };
-		E68E86AA18A1954A0025A5C4 /* newton-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = E68E86A918A1954A0025A5C4 /* newton-ipadhd.png */; };
-		E68E86AC18A1954A0025A5C4 /* newton-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = E68E86AB18A1954A0025A5C4 /* newton-ipad.plist */; };
-		E68E86AE18A1954A0025A5C4 /* newton-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = E68E86AD18A1954A0025A5C4 /* newton-ipad.png */; };
-		E68E86B018A1954A0025A5C4 /* newton.plist in Resources */ = {isa = PBXBuildFile; fileRef = E68E86AF18A1954A0025A5C4 /* newton.plist */; };
-		E68E86B218A1954A0025A5C4 /* newton.png in Resources */ = {isa = PBXBuildFile; fileRef = E68E86B118A1954A0025A5C4 /* newton.png */; };
+		E68E86BC18A42BDC0025A5C4 /* background texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E68E86BB18A42BDC0025A5C4 /* background texture.jpg */; };
+		E68E86C018A42D290025A5C4 /* turtle_64x72.png in Resources */ = {isa = PBXBuildFile; fileRef = E68E86BF18A42D290025A5C4 /* turtle_64x72.png */; };
+		E68E86C218A42D510025A5C4 /* snake.png in Resources */ = {isa = PBXBuildFile; fileRef = E68E86C118A42D510025A5C4 /* snake.png */; };
+		E68E86C418A42DEB0025A5C4 /* pig_64x72.png in Resources */ = {isa = PBXBuildFile; fileRef = E68E86C318A42DEA0025A5C4 /* pig_64x72.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -663,25 +654,10 @@
 		E68E868E18A1954A0025A5C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
 		E68E869018A1954A0025A5C4 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		E68E869118A1954A0025A5C4 /* HelloWorldScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HelloWorldScene.m; path = Classes/HelloWorldScene.m; sourceTree = "<group>"; };
-		E68E869318A1954A0025A5C4 /* IntroScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IntroScene.h; path = Classes/IntroScene.h; sourceTree = "<group>"; };
-		E68E869418A1954A0025A5C4 /* IntroScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = IntroScene.m; path = Classes/IntroScene.m; sourceTree = "<group>"; };
-		E68E869618A1954A0025A5C4 /* NewtonConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NewtonConstants.h; path = Classes/NewtonConstants.h; sourceTree = "<group>"; };
-		E68E869718A1954A0025A5C4 /* NewtonScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NewtonScene.h; path = Classes/NewtonScene.h; sourceTree = "<group>"; };
-		E68E869818A1954A0025A5C4 /* NewtonScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NewtonScene.m; path = Classes/NewtonScene.m; sourceTree = "<group>"; };
-		E68E869A18A1954A0025A5C4 /* NewtonSphere.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NewtonSphere.h; path = Classes/NewtonSphere.h; sourceTree = "<group>"; };
-		E68E869B18A1954A0025A5C4 /* NewtonSphere.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NewtonSphere.m; path = Classes/NewtonSphere.m; sourceTree = "<group>"; };
-		E68E869D18A1954A0025A5C4 /* LightBulb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LightBulb.h; path = Classes/LightBulb.h; sourceTree = "<group>"; };
-		E68E869E18A1954A0025A5C4 /* LightBulb.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LightBulb.m; path = Classes/LightBulb.m; sourceTree = "<group>"; };
-		E68E86A018A1954A0025A5C4 /* Rope.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Rope.h; path = Classes/Rope.h; sourceTree = "<group>"; };
-		E68E86A118A1954A0025A5C4 /* Rope.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Rope.m; path = Classes/Rope.m; sourceTree = "<group>"; };
-		E68E86A318A1954A0025A5C4 /* fire.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = fire.plist; path = Resources/fire.plist; sourceTree = "<group>"; };
-		E68E86A518A1954A0025A5C4 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fire.png; path = Resources/fire.png; sourceTree = "<group>"; };
-		E68E86A718A1954A0025A5C4 /* newton-ipadhd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "newton-ipadhd.plist"; path = "Resources/newton-ipadhd.plist"; sourceTree = "<group>"; };
-		E68E86A918A1954A0025A5C4 /* newton-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "newton-ipadhd.png"; path = "Resources/newton-ipadhd.png"; sourceTree = "<group>"; };
-		E68E86AB18A1954A0025A5C4 /* newton-ipad.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "newton-ipad.plist"; path = "Resources/newton-ipad.plist"; sourceTree = "<group>"; };
-		E68E86AD18A1954A0025A5C4 /* newton-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "newton-ipad.png"; path = "Resources/newton-ipad.png"; sourceTree = "<group>"; };
-		E68E86AF18A1954A0025A5C4 /* newton.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = newton.plist; path = Resources/newton.plist; sourceTree = "<group>"; };
-		E68E86B118A1954A0025A5C4 /* newton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = newton.png; path = Resources/newton.png; sourceTree = "<group>"; };
+		E68E86BB18A42BDC0025A5C4 /* background texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background texture.jpg"; sourceTree = "<group>"; };
+		E68E86BF18A42D290025A5C4 /* turtle_64x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turtle_64x72.png; sourceTree = "<group>"; };
+		E68E86C118A42D510025A5C4 /* snake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snake.png; sourceTree = "<group>"; };
+		E68E86C318A42DEA0025A5C4 /* pig_64x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pig_64x72.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -753,6 +729,10 @@
 		E68E83FE18A195450025A5C4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E68E86C318A42DEA0025A5C4 /* pig_64x72.png */,
+				E68E86C118A42D510025A5C4 /* snake.png */,
+				E68E86BF18A42D290025A5C4 /* turtle_64x72.png */,
+				E68E86BB18A42BDC0025A5C4 /* background texture.jpg */,
 				E68E83FF18A195450025A5C4 /* Default.png */,
 				E68E840118A195450025A5C4 /* Default@2x.png */,
 				E68E840318A195450025A5C4 /* Default-568h@2x.png */,
@@ -760,14 +740,6 @@
 				E68E842218A195450025A5C4 /* Info.plist */,
 				E68E842318A195450025A5C4 /* iTunesArtwork */,
 				E68E842518A195450025A5C4 /* iTunesArtwork@2x */,
-				E68E86A318A1954A0025A5C4 /* fire.plist */,
-				E68E86A518A1954A0025A5C4 /* fire.png */,
-				E68E86A718A1954A0025A5C4 /* newton-ipadhd.plist */,
-				E68E86A918A1954A0025A5C4 /* newton-ipadhd.png */,
-				E68E86AB18A1954A0025A5C4 /* newton-ipad.plist */,
-				E68E86AD18A1954A0025A5C4 /* newton-ipad.png */,
-				E68E86AF18A1954A0025A5C4 /* newton.plist */,
-				E68E86B118A1954A0025A5C4 /* newton.png */,
 				E68E840718A195450025A5C4 /* Icons */,
 			);
 			name = Resources;
@@ -1581,17 +1553,6 @@
 				E68E868E18A1954A0025A5C4 /* AppDelegate.m */,
 				E68E869018A1954A0025A5C4 /* HelloWorldScene.h */,
 				E68E869118A1954A0025A5C4 /* HelloWorldScene.m */,
-				E68E869318A1954A0025A5C4 /* IntroScene.h */,
-				E68E869418A1954A0025A5C4 /* IntroScene.m */,
-				E68E869618A1954A0025A5C4 /* NewtonConstants.h */,
-				E68E869718A1954A0025A5C4 /* NewtonScene.h */,
-				E68E869818A1954A0025A5C4 /* NewtonScene.m */,
-				E68E869A18A1954A0025A5C4 /* NewtonSphere.h */,
-				E68E869B18A1954A0025A5C4 /* NewtonSphere.m */,
-				E68E869D18A1954A0025A5C4 /* LightBulb.h */,
-				E68E869E18A1954A0025A5C4 /* LightBulb.m */,
-				E68E86A018A1954A0025A5C4 /* Rope.h */,
-				E68E86A118A1954A0025A5C4 /* Rope.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1688,14 +1649,10 @@
 				E68E860218A195490025A5C4 /* LICENSE_Kazmath.txt in Resources */,
 				E68E861918A195490025A5C4 /* LICENSE_CCBReader.txt in Resources */,
 				E68E868718A1954A0025A5C4 /* LICENSE_Chipmunk.txt in Resources */,
-				E68E86A418A1954A0025A5C4 /* fire.plist in Resources */,
-				E68E86A618A1954A0025A5C4 /* fire.png in Resources */,
-				E68E86A818A1954A0025A5C4 /* newton-ipadhd.plist in Resources */,
-				E68E86AA18A1954A0025A5C4 /* newton-ipadhd.png in Resources */,
-				E68E86AC18A1954A0025A5C4 /* newton-ipad.plist in Resources */,
-				E68E86AE18A1954A0025A5C4 /* newton-ipad.png in Resources */,
-				E68E86B018A1954A0025A5C4 /* newton.plist in Resources */,
-				E68E86B218A1954A0025A5C4 /* newton.png in Resources */,
+				E68E86BC18A42BDC0025A5C4 /* background texture.jpg in Resources */,
+				E68E86C018A42D290025A5C4 /* turtle_64x72.png in Resources */,
+				E68E86C218A42D510025A5C4 /* snake.png in Resources */,
+				E68E86C418A42DEB0025A5C4 /* pig_64x72.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1843,11 +1800,6 @@
 				E68E868B18A1954A0025A5C4 /* main.m in Sources */,
 				E68E868F18A1954A0025A5C4 /* AppDelegate.m in Sources */,
 				E68E869218A1954A0025A5C4 /* HelloWorldScene.m in Sources */,
-				E68E869518A1954A0025A5C4 /* IntroScene.m in Sources */,
-				E68E869918A1954A0025A5C4 /* NewtonScene.m in Sources */,
-				E68E869C18A1954A0025A5C4 /* NewtonSphere.m in Sources */,
-				E68E869F18A1954A0025A5C4 /* LightBulb.m in Sources */,
-				E68E86A218A1954A0025A5C4 /* Rope.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
