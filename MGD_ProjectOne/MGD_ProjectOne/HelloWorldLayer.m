@@ -13,6 +13,11 @@
 // Needed to obtain the Navigation Controller
 #import "AppDelegate.h"
 
+CCSprite *background;
+CCSprite *turtle;
+CCSprite *pig;
+CCSprite *snake;
+
 
 
 @implementation HelloWorldLayer
@@ -38,6 +43,27 @@
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super's" return value
 	if( (self=[super init]) ) {
+        
+        //add the background texture
+        CGSize windowSize = [[CCDirector sharedDirector] winSize];
+        background = [CCSprite spriteWithFile:@"background texture.jpg"];
+        background.position = ccp(windowSize.width/2, windowSize.height/2);
+        [self addChild:background];
+        
+        //add turtle sprite
+        turtle = [CCSprite spriteWithFile:@"turtle_64x72.png"];
+        turtle.position = ccp(175,120);
+        [self addChild:turtle];
+        
+        //add pig sprite
+        pig = [CCSprite spriteWithFile:@"pig_64x72.png"];
+        pig.position = ccp(275,150);
+        [self addChild:pig];
+        
+        //add snake sprite
+        snake = [CCSprite spriteWithFile:@"snake.png"];
+        snake.position = ccp(375,110);
+        [self addChild:snake];
 		
     }
 	return self;
