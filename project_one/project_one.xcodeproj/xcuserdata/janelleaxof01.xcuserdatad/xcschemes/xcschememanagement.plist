@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ObjectiveChipmunk.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
 		<key>project_one.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,12 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>E68E89BA18A439880025A5C4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E68E89D118A439880025A5C4</key>
+		<key>E657537018A4404B0033F3C3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
