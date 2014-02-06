@@ -145,6 +145,8 @@
 		E618C11018A4505A00ECEE19 /* snake.png in Resources */ = {isa = PBXBuildFile; fileRef = E618C10F18A4505A00ECEE19 /* snake.png */; };
 		E618C11218A4506E00ECEE19 /* pig_64x72.png in Resources */ = {isa = PBXBuildFile; fileRef = E618C11118A4506E00ECEE19 /* pig_64x72.png */; };
 		E618C11418A4507600ECEE19 /* turtle_64x72.png in Resources */ = {isa = PBXBuildFile; fileRef = E618C11318A4507600ECEE19 /* turtle_64x72.png */; };
+		E618C11618A4510200ECEE19 /* pig.wav in Resources */ = {isa = PBXBuildFile; fileRef = E618C11518A4510200ECEE19 /* pig.wav */; };
+		E618C11818A4510800ECEE19 /* snake.wav in Resources */ = {isa = PBXBuildFile; fileRef = E618C11718A4510800ECEE19 /* snake.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -433,6 +435,8 @@
 		E618C10F18A4505A00ECEE19 /* snake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snake.png; sourceTree = "<group>"; };
 		E618C11118A4506E00ECEE19 /* pig_64x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pig_64x72.png; sourceTree = "<group>"; };
 		E618C11318A4507600ECEE19 /* turtle_64x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turtle_64x72.png; sourceTree = "<group>"; };
+		E618C11518A4510200ECEE19 /* pig.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pig.wav; sourceTree = "<group>"; };
+		E618C11718A4510800ECEE19 /* snake.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snake.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -509,6 +513,8 @@
 		E618BF6F18A44EEB00ECEE19 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E618C11518A4510200ECEE19 /* pig.wav */,
+				E618C11718A4510800ECEE19 /* snake.wav */,
 				E618C11318A4507600ECEE19 /* turtle_64x72.png */,
 				E618C11118A4506E00ECEE19 /* pig_64x72.png */,
 				E618C10F18A4505A00ECEE19 /* snake.png */,
@@ -958,6 +964,8 @@
 				E618C11018A4505A00ECEE19 /* snake.png in Resources */,
 				E618C11218A4506E00ECEE19 /* pig_64x72.png in Resources */,
 				E618C11418A4507600ECEE19 /* turtle_64x72.png in Resources */,
+				E618C11618A4510200ECEE19 /* pig.wav in Resources */,
+				E618C11818A4510800ECEE19 /* snake.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
