@@ -14,6 +14,7 @@
 CCSprite *turtle;
 CCSprite *pig;
 CCSprite *snake;
+CCSprite *background;
 
 #pragma mark - HelloWorldLayer
 
@@ -41,6 +42,13 @@ CCSprite *snake;
 {
     
     if((self = [super init])){
+        
+        //add the background texture
+        CGSize windowSize = [[CCDirector sharedDirector] winSize];
+        background = [CCSprite spriteWithFile:@"background texture.jpg"];
+        background.position = ccp(windowSize.width/2, windowSize.height/2);
+        [self addChild:background];
+        
         //add turtle sprite
         turtle = [CCSprite spriteWithFile:@"turtle_64x72.png"];
         turtle.position = ccp(175,120);
@@ -64,28 +72,10 @@ CCSprite *snake;
 	return self;
 }
 
-// on "dealloc" you need to release all your retained objects
 - (void) dealloc
 {
-	// in case you have something to dealloc, do it in this method
-	// in this particular example nothing needs to be released.
-	// cocos2d will automatically release all the children (Label)
-	
-	// don't forget to call "super dealloc"
+
 	[super dealloc];
 }
 
-#pragma mark GameKit delegate
-
--(void) achievementViewControllerDidFinish:(GKAchievementViewController *)viewController
-{
-	AppController *app = (AppController*) [[UIApplication sharedApplication] delegate];
-	[[app navController] dismissModalViewControllerAnimated:YES];
-}
-
--(void) leaderboardViewControllerDidFinish:(GKLeaderboardViewController *)viewController
-{
-	AppController *app = (AppController*) [[UIApplication sharedApplication] delegate];
-	[[app navController] dismissModalViewControllerAnimated:YES];
-}
 @end

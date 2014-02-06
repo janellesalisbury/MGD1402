@@ -144,6 +144,7 @@
 		E657552818A440B70033F3C3 /* snake.png in Resources */ = {isa = PBXBuildFile; fileRef = E657552718A440B70033F3C3 /* snake.png */; };
 		E657552A18A440C50033F3C3 /* pig_64x72.png in Resources */ = {isa = PBXBuildFile; fileRef = E657552918A440C50033F3C3 /* pig_64x72.png */; };
 		E657552C18A440CE0033F3C3 /* turtle_64x72.png in Resources */ = {isa = PBXBuildFile; fileRef = E657552B18A440CE0033F3C3 /* turtle_64x72.png */; };
+		E657552E18A446F20033F3C3 /* background texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E657552D18A446F20033F3C3 /* background texture.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -431,6 +432,7 @@
 		E657552718A440B70033F3C3 /* snake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snake.png; sourceTree = "<group>"; };
 		E657552918A440C50033F3C3 /* pig_64x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pig_64x72.png; sourceTree = "<group>"; };
 		E657552B18A440CE0033F3C3 /* turtle_64x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turtle_64x72.png; sourceTree = "<group>"; };
+		E657552D18A446F20033F3C3 /* background texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background texture.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -507,6 +509,7 @@
 		E657538918A4404B0033F3C3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E657552D18A446F20033F3C3 /* background texture.jpg */,
 				E657552B18A440CE0033F3C3 /* turtle_64x72.png */,
 				E657552918A440C50033F3C3 /* pig_64x72.png */,
 				E657552718A440B70033F3C3 /* snake.png */,
@@ -954,6 +957,7 @@
 				E657552818A440B70033F3C3 /* snake.png in Resources */,
 				E657552A18A440C50033F3C3 /* pig_64x72.png in Resources */,
 				E657552C18A440CE0033F3C3 /* turtle_64x72.png in Resources */,
+				E657552E18A446F20033F3C3 /* background texture.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
