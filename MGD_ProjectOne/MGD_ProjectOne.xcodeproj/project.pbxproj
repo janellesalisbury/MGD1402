@@ -147,6 +147,7 @@
 		E618C11418A4507600ECEE19 /* turtle_64x72.png in Resources */ = {isa = PBXBuildFile; fileRef = E618C11318A4507600ECEE19 /* turtle_64x72.png */; };
 		E618C11618A4510200ECEE19 /* pig.wav in Resources */ = {isa = PBXBuildFile; fileRef = E618C11518A4510200ECEE19 /* pig.wav */; };
 		E618C11818A4510800ECEE19 /* snake.wav in Resources */ = {isa = PBXBuildFile; fileRef = E618C11718A4510800ECEE19 /* snake.wav */; };
+		E618C11A18A4574100ECEE19 /* wildlife.wav in Resources */ = {isa = PBXBuildFile; fileRef = E618C11918A4574100ECEE19 /* wildlife.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -437,6 +438,7 @@
 		E618C11318A4507600ECEE19 /* turtle_64x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turtle_64x72.png; sourceTree = "<group>"; };
 		E618C11518A4510200ECEE19 /* pig.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pig.wav; sourceTree = "<group>"; };
 		E618C11718A4510800ECEE19 /* snake.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snake.wav; sourceTree = "<group>"; };
+		E618C11918A4574100ECEE19 /* wildlife.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wildlife.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -513,6 +515,7 @@
 		E618BF6F18A44EEB00ECEE19 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E618C11918A4574100ECEE19 /* wildlife.wav */,
 				E618C11518A4510200ECEE19 /* pig.wav */,
 				E618C11718A4510800ECEE19 /* snake.wav */,
 				E618C11318A4507600ECEE19 /* turtle_64x72.png */,
@@ -966,6 +969,7 @@
 				E618C11418A4507600ECEE19 /* turtle_64x72.png in Resources */,
 				E618C11618A4510200ECEE19 /* pig.wav in Resources */,
 				E618C11818A4510800ECEE19 /* snake.wav in Resources */,
+				E618C11A18A4574100ECEE19 /* wildlife.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

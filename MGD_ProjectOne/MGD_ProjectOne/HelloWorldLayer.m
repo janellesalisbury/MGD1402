@@ -9,6 +9,9 @@
 
 // Import the interfaces
 #import "HelloWorldLayer.h"
+#import "SimpleAudioEngine.h"
+#import "CocosDenshion.h"
+#import "CDAudioManager.h"
 
 // Needed to obtain the Navigation Controller
 #import "AppDelegate.h"
@@ -44,6 +47,10 @@ CCSprite *snake;
 	// Apple recommends to re-assign "self" with the "super's" return value
 	if( (self=[super init]) ) {
         
+        //play background sound effect(obtained for free on freesound.org)
+        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"wildlife.wav"];
+        
+        //all images obtained for free from opengameart
         //add the background texture
         CGSize windowSize = [[CCDirector sharedDirector] winSize];
         background = [CCSprite spriteWithFile:@"background texture.jpg"];
