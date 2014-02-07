@@ -23,6 +23,8 @@ CCSprite *snake;
 
 
 
+
+
 @implementation HelloWorldLayer
 
 +(CCScene *) scene
@@ -61,20 +63,40 @@ CCSprite *snake;
         turtle = [CCSprite spriteWithFile:@"turtle_64x72.png"];
         turtle.position = ccp(175,120);
         [self addChild:turtle];
+        //spin the turtle(borrowed from www.youtube.com/watch?v=Z-Hb-XJVSOI
+        CCRotateBy *spinTurtle = [CCRotateBy actionWithDuration:5.0 angle:175];
+        [turtle runAction:spinTurtle];
         
         //add pig sprite
         pig = [CCSprite spriteWithFile:@"pig_64x72.png"];
         pig.position = ccp(275,150);
-        [self addChild:pig];
         
+        
+         /*
+         TRIED TO ADD A SOUND WHEN THE PIG IS CLICKED HERE BUT IT DOESNT WORK, IT ACTUALLY MAKES THE PIG UNSEEN
+        CCMenuItemImage *pig = [CCMenuItemImage itemFromNormalImage:@"pig.png" selectedImage:@"pig.png"];
+        CCMenu *pigAction = [CCMenu menuWithItems:pig, nil];
+         */
+        [self addChild:pig];
+        //make the pig move up and down on the screen
+        CCMoveTo *movePiggy = [CCMoveTo actionWithDuration:10.0 position:ccp(275, 100)];
+        [pig runAction:movePiggy];
+               
         //add snake sprite
         snake = [CCSprite spriteWithFile:@"snake.png"];
         snake.position = ccp(375,110);
         [self addChild:snake];
+        
+        //plays snake sound effect
+        [[SimpleAudioEngine sharedEngine] playEffect:@"attack.wav"];
+       
+       
 		
     }
 	return self;
 }
+
+
 
 // on "dealloc" you need to release all your retained objects
 - (void) dealloc

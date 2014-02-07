@@ -148,6 +148,7 @@
 		E618C11618A4510200ECEE19 /* pig.wav in Resources */ = {isa = PBXBuildFile; fileRef = E618C11518A4510200ECEE19 /* pig.wav */; };
 		E618C11818A4510800ECEE19 /* snake.wav in Resources */ = {isa = PBXBuildFile; fileRef = E618C11718A4510800ECEE19 /* snake.wav */; };
 		E618C11A18A4574100ECEE19 /* wildlife.wav in Resources */ = {isa = PBXBuildFile; fileRef = E618C11918A4574100ECEE19 /* wildlife.wav */; };
+		E618C2DB18A4736600ECEE19 /* attack.wav in Resources */ = {isa = PBXBuildFile; fileRef = E618C2DA18A4736600ECEE19 /* attack.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -439,6 +440,7 @@
 		E618C11518A4510200ECEE19 /* pig.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pig.wav; sourceTree = "<group>"; };
 		E618C11718A4510800ECEE19 /* snake.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snake.wav; sourceTree = "<group>"; };
 		E618C11918A4574100ECEE19 /* wildlife.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wildlife.wav; sourceTree = "<group>"; };
+		E618C2DA18A4736600ECEE19 /* attack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = attack.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -515,6 +517,7 @@
 		E618BF6F18A44EEB00ECEE19 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E618C2DA18A4736600ECEE19 /* attack.wav */,
 				E618C11918A4574100ECEE19 /* wildlife.wav */,
 				E618C11518A4510200ECEE19 /* pig.wav */,
 				E618C11718A4510800ECEE19 /* snake.wav */,
@@ -970,6 +973,7 @@
 				E618C11618A4510200ECEE19 /* pig.wav in Resources */,
 				E618C11818A4510800ECEE19 /* snake.wav in Resources */,
 				E618C11A18A4574100ECEE19 /* wildlife.wav in Resources */,
+				E618C2DB18A4736600ECEE19 /* attack.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
