@@ -10,6 +10,9 @@
 // Import the interfaces
 #import "IntroLayer.h"
 #import "HelloWorldLayer.h"
+#import "SimpleAudioEngine.h"
+#import "CDAudioManager.h"
+#import "CocosDenshion.h"
 
 
 #pragma mark - IntroLayer
@@ -36,31 +39,25 @@
 // 
 -(id) init
 {
+ 
+
 	if( (self=[super init])) {
+        CCMenuItemImage *playGame = [CCMenuItemImage itemFromNormalImage:@"pig_64x72.png" selectedImage:@"turtle_64x72.png" target:self selector:@selector(onEnter:)];
+        
+        CCMenu *menuItem = [CCMenu menuWithItems:playGame, nil];
+        
+        [self addChild:menuItem];
+        
 
-		// ask director for the window size
-		CGSize size = [[CCDirector sharedDirector] winSize];
-
-		CCSprite *background;
-		
-		if( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ) {
-			background = [CCSprite spriteWithFile:@"Default.png"];
-			background.rotation = 90;
-		} else {
-			background = [CCSprite spriteWithFile:@"Default-Landscape~ipad.png"];
-		}
-		background.position = ccp(size.width/2, size.height/2);
-
-		// add the label as a child to this Layer
-		[self addChild: background];
-	}
-	
-	return self;
+    }
+    return self;
+     
 }
 
--(void) onEnter
+-(void) onEnter:(id)sender
 {
-	[super onEnter];
-	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0 scene:[HelloWorldLayer scene] ]];
+    //plays snake sound effect
+    [[SimpleAudioEngine sharedEngine] playEffect:@"attack.wav"];
+    [[CCDirector sharedDirector] replaceScene:[CCTransitionFlipX transitionWithDuration:1.0 scene: [HelloWorldLayer node]]];
 }
 @end

@@ -61,7 +61,7 @@ CCSprite *snake;
         
         //add turtle sprite
         turtle = [CCSprite spriteWithFile:@"turtle_64x72.png"];
-        turtle.position = ccp(175,120);
+        turtle.position = ccp(30,120);
         [self addChild:turtle];
         //spin the turtle(borrowed from www.youtube.com/watch?v=Z-Hb-XJVSOI
         CCRotateBy *spinTurtle = [CCRotateBy actionWithDuration:5.0 angle:175];
@@ -84,19 +84,55 @@ CCSprite *snake;
                
         //add snake sprite
         snake = [CCSprite spriteWithFile:@"snake.png"];
-        snake.position = ccp(375,110);
+        snake.position = ccp(375,45);
         [self addChild:snake];
         
-        //plays snake sound effect
-        [[SimpleAudioEngine sharedEngine] playEffect:@"attack.wav"];
-       
-       
+
+        
+               
 		
     }
 	return self;
 }
 
-
+/*
+-(void)ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event{
+    
+    //shoot an arrow when the user taps the snake sprite, try to shoot the turtle
+    [self setIsTouchEnabled:YES];
+    UITouch *shoot = [touch anyObject];
+    CGPoint location = [self convertTouchToNodeSpace:shoot];
+    
+    CGSize winSize = [[CCDirector sharedDirector] winSize];
+    CCSprite *arrow = [CCSprite spriteWithFile:@"bow.jpg"];
+    arrow.position = ccp(20, winSize.height/2);
+    CGPoint offset = ccpSub(location, arrow.position);
+    
+    //check position of arrow
+    if(offset.x <=0) return;
+    
+    [self addChild:arrow];
+    
+    int realX = winSize.width + (arrow.contentSize.width/2);
+    float ratio = (float) offset.y/(float)offset.x;
+    int realY = (realX * ratio) + arrow.position.y;
+    CGPoint realDest = ccp(realX, realY);
+    
+    int offRealX = realX - arrow.position.x;
+    int offRealY = realY - arrow.position.y;
+    float length = sqrtf((offRealX * offRealX) + (offRealY * offRealY));
+    float velocity = 345/1;
+    float realMoveDuration = length/velocity;
+    
+    [arrow runAction:
+     [CCSequence actions:
+      [CCMoveTo actionWithDuration:realMoveDuration position:realDest],
+      [CCCallBlockN actionWithBlock:^(CCNode *node) {
+         [node removeFromParentAndCleanup:YES];
+     }],
+      nil]];
+}
+*/
 
 // on "dealloc" you need to release all your retained objects
 - (void) dealloc
