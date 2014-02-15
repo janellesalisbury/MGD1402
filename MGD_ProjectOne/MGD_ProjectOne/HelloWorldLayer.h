@@ -17,8 +17,9 @@
 {
     CCSprite *pig;
     float x, y;
+    
 }
-
+-(void)jumpSnake;
 // returns a CCScene that contains the HelloWorldLayer as the only child
 +(CCScene *) scene;
 

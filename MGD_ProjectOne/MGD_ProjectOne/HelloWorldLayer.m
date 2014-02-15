@@ -49,6 +49,8 @@ CCSprite *snake;
 	// Apple recommends to re-assign "self" with the "super's" return value
 	if( (self=[super init]) ) {
         
+        self.isTouchEnabled = YES;
+        
         //play background sound effect(obtained for free on freesound.org)
         [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"wildlife.wav"];
         
@@ -87,52 +89,24 @@ CCSprite *snake;
         snake.position = ccp(375,45);
         [self addChild:snake];
         
-
         
-               
-		
+        
+        	
     }
 	return self;
 }
 
-/*
--(void)ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event{
-    
-    //shoot an arrow when the user taps the snake sprite, try to shoot the turtle
-    [self setIsTouchEnabled:YES];
-    UITouch *shoot = [touch anyObject];
-    CGPoint location = [self convertTouchToNodeSpace:shoot];
-    
-    CGSize winSize = [[CCDirector sharedDirector] winSize];
-    CCSprite *arrow = [CCSprite spriteWithFile:@"bow.jpg"];
-    arrow.position = ccp(20, winSize.height/2);
-    CGPoint offset = ccpSub(location, arrow.position);
-    
-    //check position of arrow
-    if(offset.x <=0) return;
-    
-    [self addChild:arrow];
-    
-    int realX = winSize.width + (arrow.contentSize.width/2);
-    float ratio = (float) offset.y/(float)offset.x;
-    int realY = (realX * ratio) + arrow.position.y;
-    CGPoint realDest = ccp(realX, realY);
-    
-    int offRealX = realX - arrow.position.x;
-    int offRealY = realY - arrow.position.y;
-    float length = sqrtf((offRealX * offRealX) + (offRealY * offRealY));
-    float velocity = 345/1;
-    float realMoveDuration = length/velocity;
-    
-    [arrow runAction:
-     [CCSequence actions:
-      [CCMoveTo actionWithDuration:realMoveDuration position:realDest],
-      [CCCallBlockN actionWithBlock:^(CCNode *node) {
-         [node removeFromParentAndCleanup:YES];
-     }],
-      nil]];
+//CLICK THE SNAKE TO MAKE HIM JUMP UP AND DOWN AND PLAY SOUND
+-(void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    id jump = [CCJumpBy actionWithDuration:0.5 position:ccp(0,0) height:150 jumps:5];
+    //the sound effect takes a second to start playing, click more than once please
+    [[SimpleAudioEngine sharedEngine] playEffect:@"snake.wav"];
+    [snake runAction:jump];
 }
-*/
+
+ 
+
 
 // on "dealloc" you need to release all your retained objects
 - (void) dealloc
