@@ -12,6 +12,7 @@
 #import "SimpleAudioEngine.h"
 #import "CocosDenshion.h"
 #import "CDAudioManager.h"
+#import "PauseSceneLayer.h"
 
 // Needed to obtain the Navigation Controller
 #import "AppDelegate.h"
@@ -89,6 +90,13 @@ CCSprite *snake;
         snake.position = ccp(375,45);
         [self addChild:snake];
         
+        //pause button
+        CCMenuItem *pauseButton = [CCMenuItemImage itemWithNormalImage:@"pause.jpg" selectedImage:@"pause.jpg" target:self selector:@selector(pauseGame)];
+        CCMenu *pauseGame = [CCMenu menuWithItems:pauseButton, nil];
+        pauseButton.position = ccp(150, 10);
+        [self schedule:@selector(tick:) interval:1.0f/60.0f];
+        [self addChild:pauseButton z:1000];
+        
         
         
         	
@@ -106,7 +114,11 @@ CCSprite *snake;
 }
 
  
-
+//pause functionality
+-(void) pauseGame
+{
+    [[CCDirector sharedDirector] pushScene:[PauseSceneLayer node]];
+}
 
 // on "dealloc" you need to release all your retained objects
 - (void) dealloc

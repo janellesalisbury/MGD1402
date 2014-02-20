@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E60027A318B6B60400A38500 /* pause.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E60027A218B6B60400A38500 /* pause.jpg */; };
+		E60027AA18B6B91100A38500 /* PauseSceneLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E60027A918B6B91100A38500 /* PauseSceneLayer.m */; };
 		E618BF5B18A44EEB00ECEE19 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E618BF5A18A44EEB00ECEE19 /* QuartzCore.framework */; };
 		E618BF5D18A44EEB00ECEE19 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E618BF5C18A44EEB00ECEE19 /* OpenGLES.framework */; };
 		E618BF5F18A44EEB00ECEE19 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E618BF5E18A44EEB00ECEE19 /* OpenAL.framework */; };
@@ -153,6 +155,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E60027A218B6B60400A38500 /* pause.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pause.jpg; sourceTree = "<group>"; };
+		E60027A818B6B91100A38500 /* PauseSceneLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseSceneLayer.h; sourceTree = "<group>"; };
+		E60027A918B6B91100A38500 /* PauseSceneLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseSceneLayer.m; sourceTree = "<group>"; };
 		E618BF5718A44EEB00ECEE19 /* MGD_ProjectOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGD_ProjectOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E618BF5A18A44EEB00ECEE19 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E618BF5C18A44EEB00ECEE19 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -466,6 +471,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E60027A418B6B61500A38500 /* Default/Startup Icons */ = {
+			isa = PBXGroup;
+			children = (
+				E618BF8518A44EED00ECEE19 /* iTunesArtwork */,
+				E618BF8418A44EED00ECEE19 /* Info.plist */,
+				E618BF8218A44EED00ECEE19 /* Icon@2x.png */,
+				E618BF8018A44EED00ECEE19 /* Icon.png */,
+				E618BF7E18A44EED00ECEE19 /* Icon-Small@2x.png */,
+				E618BF7C18A44EED00ECEE19 /* Icon-Small.png */,
+				E618BF7A18A44EEC00ECEE19 /* Icon-Small-50.png */,
+				E618BF7818A44EEC00ECEE19 /* Icon-72.png */,
+				E618BF7618A44EEC00ECEE19 /* Default-Landscape~ipad.png */,
+				E618BF7418A44EEC00ECEE19 /* Default-568h@2x.png */,
+				E618BF7218A44EEC00ECEE19 /* Default@2x.png */,
+				E618BF7018A44EEB00ECEE19 /* Default.png */,
+			);
+			name = "Default/Startup Icons";
+			sourceTree = "<group>";
+		};
 		E618BF4E18A44EEB00ECEE19 = {
 			isa = PBXGroup;
 			children = (
@@ -505,13 +529,15 @@
 			children = (
 				E618C0FF18A44EF300ECEE19 /* AppDelegate.h */,
 				E618C10018A44EF300ECEE19 /* AppDelegate.m */,
+				E60027A818B6B91100A38500 /* PauseSceneLayer.h */,
+				E60027A918B6B91100A38500 /* PauseSceneLayer.m */,
 				E618C10218A44EF300ECEE19 /* HelloWorldLayer.h */,
 				E618C10318A44EF300ECEE19 /* HelloWorldLayer.m */,
 				E618C10518A44EF300ECEE19 /* IntroLayer.h */,
 				E618C10618A44EF300ECEE19 /* IntroLayer.m */,
+				E618C0FB18A44EF300ECEE19 /* Supporting Files */,
 				E618BF6F18A44EEB00ECEE19 /* Resources */,
 				E618BF8718A44EED00ECEE19 /* libs */,
-				E618C0FB18A44EF300ECEE19 /* Supporting Files */,
 			);
 			path = MGD_ProjectOne;
 			sourceTree = "<group>";
@@ -519,20 +545,9 @@
 		E618BF6F18A44EEB00ECEE19 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E60027A418B6B61500A38500 /* Default/Startup Icons */,
 				E6544A9418AD8A75006B94A7 /* sounds */,
 				E6544A9318AD8A59006B94A7 /* Images */,
-				E618BF7018A44EEB00ECEE19 /* Default.png */,
-				E618BF7218A44EEC00ECEE19 /* Default@2x.png */,
-				E618BF7418A44EEC00ECEE19 /* Default-568h@2x.png */,
-				E618BF7618A44EEC00ECEE19 /* Default-Landscape~ipad.png */,
-				E618BF7818A44EEC00ECEE19 /* Icon-72.png */,
-				E618BF7A18A44EEC00ECEE19 /* Icon-Small-50.png */,
-				E618BF7C18A44EED00ECEE19 /* Icon-Small.png */,
-				E618BF7E18A44EED00ECEE19 /* Icon-Small@2x.png */,
-				E618BF8018A44EED00ECEE19 /* Icon.png */,
-				E618BF8218A44EED00ECEE19 /* Icon@2x.png */,
-				E618BF8418A44EED00ECEE19 /* Info.plist */,
-				E618BF8518A44EED00ECEE19 /* iTunesArtwork */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -902,6 +917,7 @@
 		E6544A9318AD8A59006B94A7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E60027A218B6B60400A38500 /* pause.jpg */,
 				E618C10D18A4505400ECEE19 /* background texture.jpg */,
 				E618C10F18A4505A00ECEE19 /* snake.png */,
 				E618C11118A4506E00ECEE19 /* pig_64x72.png */,
@@ -994,6 +1010,7 @@
 				E618C11A18A4574100ECEE19 /* wildlife.wav in Resources */,
 				E618C2DB18A4736600ECEE19 /* attack.wav in Resources */,
 				E65448D318AD694D006B94A7 /* bow.jpg in Resources */,
+				E60027A318B6B60400A38500 /* pause.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1116,6 +1133,7 @@
 				E618C10118A44EF300ECEE19 /* AppDelegate.m in Sources */,
 				E618C10418A44EF300ECEE19 /* HelloWorldLayer.m in Sources */,
 				E618C10718A44EF300ECEE19 /* IntroLayer.m in Sources */,
+				E60027AA18B6B91100A38500 /* PauseSceneLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
