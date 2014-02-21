@@ -17,6 +17,17 @@
 // Needed to obtain the Navigation Controller
 #import "AppDelegate.h"
 
+@interface HelloWorldLayer()
+{
+    BOOL fishSwimming;
+}
+
+@property (strong, nonatomic) CCSprite *fish;
+@property (strong, nonatomic) CCAction *swimAction;
+
+
+@end
+
 CCSprite *background;
 CCSprite *turtle;
 CCSprite *pig;
@@ -28,13 +39,18 @@ CCSprite *snake;
 
 @implementation HelloWorldLayer
 
+
 +(CCScene *) scene
 {
 	// 'scene' is an autorelease object.
 	CCScene *scene = [CCScene node];
+    
+    //HUD Layer
+    HUDLayer *hud = [HUDLayer node];
+    [scene addChild:hud z:1];
 	
 	// 'layer' is an autorelease object.
-	HelloWorldLayer *layer = [HelloWorldLayer node];
+	HelloWorldLayer *layer = [[HelloWorldLayer alloc] initWithHUD:hud];
 	
 	// add layer as a child to scene
 	[scene addChild: layer];
@@ -43,15 +59,77 @@ CCSprite *snake;
 	return scene;
 }
 
-// on "init" you need to initialize your instance
+/*
+- (void)restartTapped:(id)sender {
+    
+    // Reload the current scene
+    CCScene *scene = [HelloWorldLayer scene];
+    [[CCDirector sharedDirector] replaceScene:[CCTransitionZoomFlipX transitionWithDuration:0.5 scene:scene]];
+    
+}
+
+- (void)showRestartMenu:(BOOL)won {
+    
+    CGSize winSize = [CCDirector sharedDirector].winSize;
+    
+    NSString *message;
+    if (won) {
+        message = @"You win!";
+    } else {
+        message = @"You lose!";
+    }
+    
+    CCLabelBMFont *label;
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        label = [CCLabelBMFont labelWithString:message fntFile:@"Arial-hd.fnt"];
+    } else {
+        label = [CCLabelBMFont labelWithString:message fntFile:@"Arial.fnt"];
+    }
+    label.scale = 0.1;
+    label.position = ccp(winSize.width/2, winSize.height * 0.6);
+    [self addChild:label];
+    
+    CCLabelBMFont *restartLabel;
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        restartLabel = [CCLabelBMFont labelWithString:@"Restart" fntFile:@"Arial-hd.fnt"];
+    } else {
+        restartLabel = [CCLabelBMFont labelWithString:@"Restart" fntFile:@"Arial.fnt"];
+    }
+    
+    CCMenuItemLabel *restartItem = [CCMenuItemLabel itemWithLabel:restartLabel target:self selector:@selector(restartTapped:)];
+    restartItem.scale = 0.1;
+    restartItem.position = ccp(winSize.width/2, winSize.height * 0.4);
+    
+    CCMenu *menu = [CCMenu menuWithItems:restartItem, nil];
+    menu.position = CGPointZero;
+    [self addChild:menu z:10];
+    
+    [restartItem runAction:[CCScaleTo actionWithDuration:0.5 scale:1.0]];
+    [label runAction:[CCScaleTo actionWithDuration:0.5 scale:1.0]];
+    
+}
+*/
+// on "init" you need to initialize your instance.
+
+//WHEN I USE INITWITHHUD TO USE MY HUD LAYER THE GAME SCREEN WILL ONLY SHOW UP AS A BLACK SCREEN FOR SOME REASON
 -(id) init
 {
+    
+    //animation
+    //[[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"fishanimation.plist"];
+     
+    //CCSpriteBatchNode *spriteSheet = [CCSpriteBatchNode batchNodeWithFile:@"fish.png"];
+    
+     
+     
+     
+     
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super's" return value
 	if( (self=[super init]) ) {
         
         self.isTouchEnabled = YES;
-        
+   
         //play background sound effect(obtained for free on freesound.org)
         [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"wildlife.wav"];
         
@@ -90,16 +168,13 @@ CCSprite *snake;
         snake.position = ccp(375,45);
         [self addChild:snake];
         
-        //pause button
-        CCMenuItem *pauseButton = [CCMenuItemImage itemWithNormalImage:@"pause.jpg" selectedImage:@"pause.jpg" target:self selector:@selector(pauseGame)];
-        CCMenu *pauseGame = [CCMenu menuWithItems:pauseButton, nil];
-        pauseButton.position = ccp(150, 10);
-        [self schedule:@selector(tick:) interval:1.0f/60.0f];
-        [self addChild:pauseButton z:1000];
+        //lose
+       // [hudlayer showRestartMenu:NO];
         
+        //win
+        //[hudlayer showRestartMenu:YES];
         
-        
-        	
+    
     }
 	return self;
 }
@@ -113,23 +188,9 @@ CCSprite *snake;
     [snake runAction:jump];
 }
 
- 
-//pause functionality
--(void) pauseGame
-{
-    [[CCDirector sharedDirector] pushScene:[PauseSceneLayer node]];
-}
+
 
 // on "dealloc" you need to release all your retained objects
-- (void) dealloc
-{
-	// in case you have something to dealloc, do it in this method
-	// in this particular example nothing needs to be released.
-	// cocos2d will automatically release all the children (Label)
-	
-	// don't forget to call "super dealloc"
-	[super dealloc];
-}
 
 
 @end
